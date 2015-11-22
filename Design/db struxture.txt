@@ -1,0 +1,104 @@
+
+
+units
+=====
+code (e.x. g, dl, ts)
+name (e.x. gram, deciliter, teespoon)
+base unit (e.x. kg, l, l)
+base unit conversion (e.x. 0.001, 0.1, 0.015)
+type (volume, weight, other)
+
+recipe
+======
+autoid
+name
+authorid
+status (draft, published)
+deleted (bool)
+setting: breakfast, lunch, dinner, dessert, appetizer, party
+dish type: soup, bread, ovendish, pasta, fingerfood
+MainIngredient: none, fish, pork, beef, wild..., 
+kitchen: asian, german, dutch, swedish, fusion, italian, french etc
+ingredientsList
+cookingStepList
+noOfServings
+preparationTime
+CookingTime
+totalTime
+amountFatPerServing
+amountProteinPerServing
+amountCarbohydratesPerServing
+sourceName (name of book, website etc)
+sourceIndex (pageNumber, weblink)
+difficultylevel (unknown, easy, medium, hard)
+
+Ingredients
+===========
+code
+description
+fatPerBaseUnit
+ProteinPerBaseUnit
+CarbohydratesPerBaseUnit
+default unitType
+
+RecipeParts (als een gerecht uit 2 delen bestaat, b.v. vlees en saus, dan kan je ingredienten per deel verdelen)
+===========
+autoid
+recipeId
+priority
+PartName
+
+ReecipeIngredients
+==================
+recipeId
+IngredientId
+amount
+unitType
+fat
+protein
+carbohydrates
+recipePartId
+
+author
+======
+code
+name
+scrambledPassword
+
+status
+======
+Code (D, P)
+Description (draft, published)
+
+setting
+=======
+code (b, l, m, d, x, a, p)
+description (breakfast, lunch, dinner, dessert, appetizer, party)
+
+dishType
+========
+code: (s, b, o, p, f)
+description: soup, bread, overndish, pasta, fingerfood..
+
+MainIngredient
+==============
+code: x, y, z
+description: vegetarian, fish, pork, beef, wild...
+
+Kitchen
+=======
+code: x, y, z
+description : asian, german, dutch, swedish, fusion, italian, french etc
+
+
+RecipeCookingStep
+=================
+recipeId
+recipePartId
+priority
+text
+
+
+
+
+
